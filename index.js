@@ -48,7 +48,7 @@ function total() {
   return totalCost;
 }
 
-function removeFromCart(item) {
+  function removeFromCart(item) {
   // write your code here
   var itemInCart = false;
   for (var i = 0; i < cart.length; i++) {
@@ -60,6 +60,9 @@ function removeFromCart(item) {
   if(itemInCart){
     return cart;
   }
+  return "That item is not in your cart.";
+}
+
 
 
 function placeOrder(cardNumber) {
